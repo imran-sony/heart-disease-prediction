@@ -54,8 +54,10 @@ pip install -r requirements.txt
 
 ## 🐳 Run with Docker
 Build and run using Docker Compose:  
+```
 docker compose build --no-cache  
 docker compose up  
+```
 
 ### Start the API:
 ```
