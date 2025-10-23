@@ -19,7 +19,7 @@ The model is trained using scikit-learn’s RandomForestClassifier and deployed 
 
 ## 🧠 Model Training
 
-To train the model locally:
+Train the model locally
 ```
 python train_model.py
 ```
@@ -39,15 +39,15 @@ GET	/health	-> Health check for the API service
 GET	/info	-> Returns model info and feature names  
 POST	/predict	-> Predicts heart disease from input  
 
-## 🧩 Run Locally (without Docker)
+## 🧩 Run Locally
 
-### Create and activate a virtual environment:
+### Create and activate a virtual environment
 ```
 python -m venv .venv 
 .venv\Scripts\activate
 ```
 
-### Install dependencies:
+### Install dependencies
 ```
 pip install -r requirements.txt
 ```
@@ -59,7 +59,7 @@ docker compose build --no-cache
 docker compose up  
 ```
 
-### Start the API:
+## 🧾Start the API
 ```
 uvicorn app.main:app --reload
 ```
