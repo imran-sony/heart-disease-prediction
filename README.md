@@ -1,7 +1,6 @@
 # ❤️ Heart Disease Prediction API 
 
-A simple FastAPI application that serves a machine learning model for predicting the likelihood of heart disease based on clinical features.  
-The model is trained using scikit-learn’s RandomForestClassifier and deployed with FastAPI + Uvicorn in Docker.
+A simple FastAPI application that serves a machine learning model for predicting the likelihood of heart disease based on clinical features. The model is trained using scikit-learn’s RandomForestClassifier and deployed with FastAPI + Uvicorn in Docker.
 
 ## 📁 Project Structure 
 
@@ -59,7 +58,7 @@ docker compose build --no-cache
 docker compose up  
 ```
 
-## 🧾Start the API
+## 🧾 Start the API
 ```
 uvicorn app.main:app --reload
 ```
