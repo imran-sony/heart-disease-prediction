@@ -34,8 +34,7 @@ Save the trained model to model/heart_model.joblib
 Print the model’s accuracy score
 
 ## ⚙️ API Overview  
-### Endpoints  
-Description  
+### Endpoints    
 GET	/health	-> Health check for the API service  
 GET	/info	-> Returns model info and feature names  
 POST	/predict	-> Predicts heart disease from input  
@@ -43,35 +42,25 @@ POST	/predict	-> Predicts heart disease from input
 ## 🧩 Run Locally (without Docker)
 
 ### Create and activate a virtual environment:
-
+```
 python -m venv .venv 
 .venv\Scripts\activate
-
+```
 
 ### Install dependencies:
-
+```
 pip install -r requirements.txt
+```
 
 ## 🐳 Run with Docker
-Build and run using Docker Compose:
-docker compose build --no-cache
-docker compose up
+Build and run using Docker Compose:  
+docker compose build --no-cache  
+docker compose up  
 
 ### Start the API:
-
+```
 uvicorn app.main:app --reload
-
+```
 
 ### Open your browser:
 👉 http://127.0.0.1:8000/docs
-
-
-
-
-
-
-
-🧾 API Testing
-
-Use FastAPI’s built-in Swagger UI at /docs,
-or send a POST request manually with curl:
