@@ -1,0 +1,9 @@
+services:
+  heart-api:
+    build: .
+    container_name: heart-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app/app
+      - ./model:/app/model
